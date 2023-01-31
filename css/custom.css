@@ -2,7 +2,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: #f5f3f3
+    background-color: #f5f3f3;
 }
 h1 {
     text-align: center;
@@ -33,11 +33,25 @@ header {
     font-weight: bold;
 }
 
+.alert-success {
+    background-color: green;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-success::before {
+    content: "\2713"; /* Unicode check mark */
+    font-size: 18px;
+    margin-right: 10px;
+}
+
 ul {
     list-style: none;
 }
 #hero {
-    background-image:url(../img/hero.jpg);
+    background-image: url(../img/hero.jpg);
     height: 350px;
     background-size: cover;
 }
@@ -48,15 +62,15 @@ ul {
     position: relative;
 }
 
-.submenu #carrito{
+.submenu #carrito {
     display: none;
 }
-.submenu:hover #carrito{
+.submenu:hover #carrito {
     display: block;
     position: absolute;
-    right:0;
+    right: 0;
 
-    top:100%;
+    top: 100%;
     z-index: 1;
     background-color: white;
     padding: 20px;
@@ -84,8 +98,8 @@ ul {
 }
 .contenido-hero form .submit-buscador {
     position: absolute;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
     height: 100%;
     padding: 0;
     display: block;
@@ -94,21 +108,32 @@ ul {
     background-image: url(../img/lupa.png);
     background-position: right center;
     background-repeat: no-repeat;
-    border:none;
+    border: none;
 }
-
 
 .barra {
     padding: 20px 0;
     background: #741d51; /* Old browsers */
-    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(
+        left,
+        #741d51 0%,
+        #e44e52 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #741d51 0%,
+        #e44e52 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #741d51 0%,
+        #e44e52 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
 }
 
 .barra p {
-    margin:0;
+    margin: 0;
     color: white;
 }
 .icono {
@@ -121,7 +146,7 @@ ul {
 }
 @media (min-width: 750px) {
     .icono {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 }
 .icono1 {
@@ -135,10 +160,10 @@ ul {
 }
 
 #lista-cursos .row {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 .agregar-carrito {
-    margin:10px 0;
+    margin: 10px 0;
 }
 
 .card {
@@ -151,11 +176,11 @@ ul {
         text-align: left;
     }
 }
-.info-card  {
+.info-card {
     padding: 10px 20px;
 }
 
-.info-card p, 
+.info-card p,
 .card h4 {
     margin-bottom: 5px;
 }
@@ -169,14 +194,13 @@ ul {
     font-size: 22px;
 }
 
-
 .footer {
     margin-top: 40px;
-    border-top:1px solid #aaa;;
-    padding-top: 40px;   
+    border-top: 1px solid #aaa;
+    padding-top: 40px;
 }
-.footer .menu a{
-display: block;
-margin-bottom: 10px;
-text-decoration: none;
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
 }

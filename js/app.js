@@ -39,10 +39,21 @@ function agregarCurso(e) {
 
     if(e.target.classList.contains('agregar-carrito')){
         const cursoSeleccionado = e.target.parentElement.parentElement;
-        leerDatosCurso(cursoSeleccionado)
+        leerDatosCurso(cursoSeleccionado);
+        muestrAlerta(e.target.parentElement)
     }
 }
 
+// Mostrar alerta exito
+function muestrAlerta(div) {
+    const exito = document.createElement('p');
+    exito.textContent = "Agregado al carrito"
+    exito.classList.add('alert-success')
+    div.appendChild(exito)
+    setTimeout(() => {
+        exito.remove()
+    }, 1500);
+}
 // Elimina cursos del carrito
 function eliminarCurso(e) {
     console.log(e.target.classList);
